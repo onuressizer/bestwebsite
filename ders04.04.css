@@ -1,0 +1,93 @@
+:root{
+    --color1: rgb(191, 221, 20); 
+    --color2: rgb(238, 160, 15);
+    --color3:rgb(61, 59, 59);
+}
+
+
+
+body{
+    font-family: 'Nunito';
+    margin: 0;
+
+}
+
+section.topbar{
+    background-color:var(--color3) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: var(--color1);
+
+}
+section.menu-bar ul,
+section.topbar ul{
+    list-style-type: none;
+    margin: 0 ; padding: 0;
+    display: flex;
+   gap:10px;
+
+}
+section.topbar ul a{
+    color: var(--color1);
+    text-decoration: none;
+
+}
+
+section.menu-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(193, 197, 201, 0.295);
+}
+
+section.menu-bar img{
+ width: 300px;
+ height: auto;
+}
+section.menu-bar ul a{
+    text-decoration: none;
+    background-color: var(--color2);
+    color: var(--color3);
+    padding: 5px 10px;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 5px;
+
+
+}
+section.menu-bar ul a:hover{
+    background-color: var(--color1);
+}
+
+section.slider{
+    background-image: url(pexels-sebastian-arie-voortman-819372.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+section.slider h2{
+
+    position: absolute;
+    bottom: 30px;
+    left: 800px;
+    color: aliceblue;
+    font-weight: 900px;
+    text-shadow: 0 0 10px 0 rgb(20, 19, 19);
+
+}
+
+.icon{
+    font-size: 3rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: rgba(4, 163, 4, 0.904);
+}
